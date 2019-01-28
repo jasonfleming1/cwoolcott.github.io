@@ -1,13 +1,23 @@
-.col-md-offset-*: will increase the left margin by * classes
 
-.col-md-push-*/.col-md-pull-*: will change the order the grid columns appear by * classes. Pull will send the column to the left, while push send it to the right.
+---
 
-https://www.bootply.com/126557
+
+Easily copy and paste code to create a Navbar. (You can copy and paste this from W3 Schools http://www.w3schools.com/bootstrap/bootstrap_navbar.asp).
+
+
+---
+
+Cards on the Bootstrap website. https://getbootstrap.com/docs/4.0/components/card/
+
+
+--
 
 xs (for phones - screens less than 768px wide)
 sm (for tablets - screens equal to or greater than 768px wide)
 md (for small laptops - screens equal to or greater than 992px wide)
 lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+
+---
 
 <div class="container-fluid">
   <h1>Hello World!</h1>
@@ -26,34 +36,8 @@ https://getbootstrap.com/docs/4.0/examples/grid/
 
 ---
 
-5. Students Do: Warmup Bootstrap Component Activity (5 min)
+.col-md-offset-*: will increase the left margin by * classes
 
-a. As a repeat of last class, quickly create an HTML web page.
+.col-md-push-*/.col-md-pull-*: will change the order the grid columns appear by * classes. Pull will send the column to the left, while push send it to the right.
 
-b. Then add in a Bootstrap component of your choosing.
-
-c. Hint: Copy the Bootstrap CSS link. Then copy the code from any Bootstrap element or CSS.
-
----
-
-13. Using Bootstrap CSS, create a layout that looks like the one shown on the next screen.
-
-Hint: Spend some time prior to coding on drawing out the grid layout.
-
-Hint: Count the number of rows and columns.
-
-Hint: Then use the bootstrap grid syntax to code it out.
-
----
-
-22. 
-
-Add more styling to the CSS file such that the @media screen code creates padding and margins for the two boxes when the page is below 768px.
-
-Note: This isn't easy. Just give it your best shot. Even if you don't get the exact solution, but are able to better understand how media queries work, that's a solid takeaway.
-
-Slack out Video:
-https://www.youtube.com/watch?v=x_wlcp-W27c
-
---
-
+https://www.bootply.com/126557

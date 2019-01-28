@@ -13,3 +13,9 @@
   * Navbar
   * Sidebar card
   * Thumbnail
+
+
+HINT:
+
+Thumbnail Image URL
+http://placehold.it/150x150
