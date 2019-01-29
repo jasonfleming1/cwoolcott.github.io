@@ -1,0 +1,57 @@
+
+Slack Out:
+---
+
+js-dissect.html
+
+Download the file sent to you via Slack.
+
+IMPORTANT: When downloading any code going forward, be sure to hit "Download". If you copy and paste directly from Slack, your code will not work!
+
+Open the file in Chrome, and observe what happens.
+
+With a partner, try to explain how the code connects to the events that happen on the page.
+
+Note: We haven't covered JavaScript before, but a big part of being a developer is learning on the fly!
+
+---
+
+pizza-variables.html
+
+Instructions
+
+Using the instructions in the file sent to you, fill in the missing JavaScript code to create variables.
+
+When you are done, open the file in Chrome and check the output.
+
+If you successfully completed the activity, you should see a series of pop-up windows with text inside.
+
+Finally, look at the rest of the code and try to figure out why the text displayed the way it did.
+
+---
+
+pizza-variables-2.html
+
+Using the file sent to you as a guide, modify the code so that it uses console.log instead of alerts to display messages.
+
+With a partner, discuss the difference between using console.log and alert.
+
+---
+
+prompt-sushi.html in 07-PromptSushi/Unsolved
+
+Write JavaScript code that does the following:
+Using a confirm, ask the user, "Do you like _?" Store their response in a variable.
+Using a prompt, ask the user, "What kind of _ do you like?" Store their response in a variable.
+Alert both variables to the screen.
+
+---
+
+arrays-activity.html in 12-ArraysActivity/Unsolved
+Instructions:
+
+With a partner, take a few moments to look over the following code.
+
+Above each console.log() write a comment "predicting" what you think the output will be.
+
+HINT: Comments are the grayed lines that begin with //. These lines are ignored by JavaScript, and they allow you to explain your code. Commenting your code is an extremely useful habit to get into as it allows other developers to more easily read your code. It will also help you better understand your own applications when you look back at them.
