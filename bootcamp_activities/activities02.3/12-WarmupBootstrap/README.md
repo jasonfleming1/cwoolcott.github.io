@@ -9,3 +9,5 @@
 * Then add in a Bootstrap component of your choosing.
 
 * **HINT:** Copy the Bootstrap CSS link. Then copy the code from any Bootstrap element or CSS.
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
