@@ -1,0 +1,60 @@
+Chris' JS Notes
+
+Basic JSFiddle:
+https://jsfiddle.net/kzm58djd/4/
+
+---
+
+How To set/get the HTML content of an element:
+innerText
+innerHTML
+textContent
+https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+https://www.w3schools.com/jsref/prop_node_innertext.asp
+https://www.w3schools.com/jsref/prop_node_textcontent.asp
+
+---
+
+Randomize value in an array
+https://stackoverflow.com/questions/5915096/get-random-item-from-javascript-array
+fastFoodJoints = ["Sonic", "McDonalds", "White Castle", "Arbys"];
+//Picks out a Random Index using the length of the array (fyi: random gives us 0 through 1 in tiny increments, never being 0 or 1. Floor gives us the integer lowerest, 2.234235 is 2)
+todayIWillEat = fastFoodJoints[Math.floor(Math.random()*fastFoodJoints.length)];
+alert("Today I will eat " + todayIWillEat);
+
+---
+
+The charAt() method returns the character at the specified index in a string.
+https://www.w3schools.com/jsref/jsref_charat.asp
+name = "Chris";
+alert(name.charAt(0)); //Alerts C
+
+---
+
+onkeyup is an event we can hook onto. It will trigger when a key is pressed(technically...when a key is released)
+https://www.w3schools.com/jsref/event_onkeyup.asp
+<script>
+document.onkeyup = function(event) {
+    document.getElementById("change").innerHTML = String.fromCharCode(event.keyCode);
+}
+</script>
+<p id="change">
+HI
+</p>
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
