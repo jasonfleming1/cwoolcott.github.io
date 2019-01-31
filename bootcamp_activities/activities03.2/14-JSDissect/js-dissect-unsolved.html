@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>
-      Data Types, User Input, Conditional Logic - Uncommented
+      Data Types, User Input, Conditional Logic
     </title>
   </head>
   <body>
@@ -12,9 +12,9 @@
       var userName = prompt("What's your name?");
       var confirmCats = confirm("Do you like cats?");
 
-      var petName = "Meeses";
-      var petType = "Tuxedo Cat";
-      var petAge = 5;
+      var petName = "Mr. Pants";
+      var petType = "Gray Persian";
+      var petAge = 10;
       var petIsCat = true;
 
       if (confirmCats) {
@@ -41,7 +41,7 @@
       else if (petAge < 5) {
         alert("My pet is less than 5 years old");
       }
-      else {
+      else if (petAge > 5) {
         alert("My pet is older than 5 years old");
       }
 
@@ -50,10 +50,10 @@
 
       var catAge = prompt("How old is your cat?");
 
-      // Won't work as expected
+      // Won't work as expected :(
       alert(catAge + 2);
 
-      // Works as expected
+      // Works as expected :)
       alert(parseInt(catAge) + 2);
 
     </script>
