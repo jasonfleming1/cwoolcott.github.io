@@ -9,17 +9,17 @@
 
 **How To set/get the HTML content of an element:**
 
-innerText
+**innerText**
 
-[https://www.w3schools.com/jsref/prop_node_innertext.asp]()
+https://www.w3schools.com/jsref/prop_node_innertext.asp
 
-innerHTML
+**innerHTML**
 
-[https://www.w3schools.com/jsref/prop_html_innerhtml.asp]()
+https://www.w3schools.com/jsref/prop_html_innerhtml.asp
 
-textContent
+**textContent**
 
-[https://www.w3schools.com/jsref/prop_node_textcontent.asp]()
+https://www.w3schools.com/jsref/prop_node_textcontent.asp
 
 ---
 
