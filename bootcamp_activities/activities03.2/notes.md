@@ -55,15 +55,20 @@ onkeyup is an event we can hook onto. It will trigger when a key is pressed(tech
 
 [https://www.w3schools.com/jsref/event_onkeyup.asp]()
 
-`<p id="change">HI</p>`
-
 `<script>`
-`// Replaces the html inside of this tag with whatever Key was pressed `
-`document.onkeyup = function(event) {`
-`    document.getElementById("change").innerHTML = `String.fromCharCode(event.keyCode);
-`}`
 
-`</script>`
+`document.onkeyup = function(event) {`
+
+` // Determines which key was pressed.`
+      
+`      var keyPress = event.key;`
+      
+` }`
+
+</script>
+
+      
+
 
 ---
 **Basic for loop**
