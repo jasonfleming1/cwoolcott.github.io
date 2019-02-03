@@ -7,15 +7,15 @@
 <body>
    <div>
    <span id="test"></span>
-   <script type="text/javascript">
+   <script>
 
-      
-      /*
+
       document.onkeyup = function(event){
-         console.log(event.key);
-         document.getElementById("test").innerHTML = event.key;
+         if (event.key=="r" || event.key == "s" || event.key == "p"){
+            document.getElementById("test").innerHTML = event.key;
+         }
       }
-      */
+   
    </script>
    </div>
 </body>
