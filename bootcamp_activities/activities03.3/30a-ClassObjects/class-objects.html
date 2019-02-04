@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Example</title>
+</head>
+<body>
+  <h1>Chris' Awesome Class</h1>
+  <hr>
+  <h2 id="headlineOne"></h2>
+  <h3 id="subHeadlineOne"></h3>
+  <hr>
+
+  <script type="text/javascript">
+
+    // assign properties and values to an object
+    var personOne = {
+      "name": "Chris",
+      "favoriteMovie": "Young Frankenstein",
+      "favoriteColor": "Red",
+      "nicknames": [
+        "Christopher",
+        "Little Chris"
+      ],
+      "nameAndColor" : function(){
+        return this.name + " likes " + this.favoriteColor;
+      }
+    };
+
+    // GET personOne Object and SET it 
+    document.getElementById("headlineOne").innerHTML = personOne.nameAndColor();
+    document.getElementById("subHeadlineOne").innerHTML = personOne.nicknames[0] + " loves the movie " + personOne.favoriteMovie + "!!!" ;
+    document.getElementById("subHeadlineOne").style.color = personOne.favoriteColor.toLowerCase();
+
+  </script>
+</body>
+
+</html>
