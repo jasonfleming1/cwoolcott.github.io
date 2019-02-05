@@ -10,17 +10,47 @@
   <h2 id="headlineOne"></h2>
   <h3 id="subHeadlineOne"></h3>
   <hr>
+  <h2 id="headlineTwo"></h2>
+  <h3 id="subHeadlineTwo"></h3>
+  <hr>
+  <h2 id="headlineThree"></h2>
+  <h3 id="subHeadlineThree"></h3>
+  <hr>
 
   <script type="text/javascript">
 
+
     // assign properties and values to an object
     var personOne = {
-      "name": "Chris",
-      "favoriteMovie": "Young Frankenstein",
-      "favoriteColor": "Red",
+      "name": "Ian",
+      "favoriteMovie": "Infinity Wars",
+      "favoriteColor": "Blue",
       "nicknames": [
-        "Christopher",
-        "Little Chris"
+        "E"
+      ],
+      "nameAndColor" : function(){
+        return this.name + " likes " + this.favoriteColor;
+      }
+    };
+    var personTwo = {
+      "name": "Irina",
+      "favoriteMovie": "Toy Story",
+      "favoriteColor": "Pink",
+      "nicknames": [
+        "Irina",
+        "I"
+      ],
+      "nameAndColor" : function(){
+        return this.name + " likes " + this.favoriteColor;
+      }
+    };
+
+    var personThree = {
+      "name": "Nathan Olson",
+      "favoriteMovie": "Interstellar",
+      "favoriteColor": "Blue",
+      "nicknames": [
+        "Nate the Great"
       ],
       "nameAndColor" : function(){
         return this.name + " likes " + this.favoriteColor;
@@ -31,6 +61,16 @@
     document.getElementById("headlineOne").innerHTML = personOne.nameAndColor();
     document.getElementById("subHeadlineOne").innerHTML = personOne.nicknames[0] + " loves the movie " + personOne.favoriteMovie + "!!!" ;
     document.getElementById("subHeadlineOne").style.color = personOne.favoriteColor.toLowerCase();
+
+     // GET personOne Object and SET it 
+     document.getElementById("headlineTwo").innerHTML = personTwo.nameAndColor();
+    document.getElementById("subHeadlineTwo").innerHTML = personTwo.nicknames[0] + " loves the movie " + personTwo.favoriteMovie + "!!!" ;
+    document.getElementById("subHeadlineTwo").style.color = personTwo.favoriteColor.toLowerCase();
+
+     // GET personOne Object and SET it 
+     document.getElementById("headlineThree").innerHTML = personThree.nameAndColor();
+    document.getElementById("subHeadlineThree").innerHTML = personThree.nicknames[0] + " loves the movie " + personThree.favoriteMovie + "!!!" ;
+    document.getElementById("subHeadlineThree").style.color = personThree.favoriteColor.toLowerCase();
 
   </script>
 </body>
