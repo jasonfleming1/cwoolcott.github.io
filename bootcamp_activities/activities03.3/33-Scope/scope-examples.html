@@ -16,11 +16,11 @@
     var firstFunction = function(message) {
       // Inside of firstFunction, I can see both exposed and
       // message.
-      console.log(message + exposed);
+      document.write(message + exposed);
     };
 
     firstFunction("Oh my! ");
-
+    document.write("<br>");
     // This will throw an error--the message variable
     // is only visible *inside* of firstFunction.
     // console.log(message);
@@ -32,6 +32,7 @@
     };
 
     secondFunction("This isn't what I thought I wrote...");
+    document.write("<br>");
 
     // Finally, keep in mind that using "return" lets us
     // give something back to whomever called the function.
@@ -44,6 +45,7 @@
     // inside of your functions.
     var message = thirdFunction("Oh my! ");
     console.log(message);
+    document.write("<br>");
     </script>
 
   </body>

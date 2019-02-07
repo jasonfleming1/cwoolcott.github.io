@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scope</title>
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+  </head>
+  <body style="font-family: 'Overpass', sans-serif;">
+
+    <div style="margin:auto; max-width:700px; text-align:center">
+      <h1>Scope Sample</h1>
+      <h2>Using the indisputably, world's coolest car</h2>
+
+      <div style="float:left">
+        <img id="carImage"/>
+      </div>
+      <div style="float:left; margin:20px; font-size:28px;text-align:left">
+        <p id="carYearDisplay"></p>
+        <p id="carMakeDisplay"></p>
+        <p id="carModelDiplay"></p>
+      </div>
+    </div>
+    <script>
+    // Create Function Declarations (What happens if I move these somewhere lower on the page?)
+
+    function showCarImage() {
+      document.getElementById("carImage").src=carImage;
+    }
+
+    function showCarMake() {
+      carMake = "Toyota";
+      var carYear = "1995"; //Only Available in this Function!
+      document.getElementById("carMakeDisplay").innerHTML = "Car Make: " + carMake;
+    }
+    
+    // Create Variable Definitions (What happens if I put these lower on the page?)
+    var carMake = "Mazda";
+    var carModel = "Rx-7";
+    var carImage = "https://imgc.allpostersimages.com/img/print/u-g-F5D9J50.jpg?w=350&h=350&p=0";
+
+
+    showCarMake();
+
+    carMake = "Ford";
+
+    //showCarMake();
+
+    showCarImage();
+
+
+
+    // Populate Car Model
+    document.getElementById("carModelDiplay").innerHTML = "Car Model: " + carModel;
+
+    // Populate Car Year 
+    document.getElementById("carYearDisplay").innerHTML = carYear;
+
+
+    
+    </script>
+  </body>
+</html>
