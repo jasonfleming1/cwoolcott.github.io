@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New This</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <script>
+
+var garage = {
+    tool: "Air Compressor",
+     carsInGarage: {
+        carMakes: ["Mazda", "Ford", "Honda"],
+        carModels: ["Rx-7", "Mustang", "Pilot"]
+     },
+    snowMachines:["Snow Blower"]
+  }
+
+//Show last car type in the garage
+document.write(garage.carsInGarage.carMakes[2] + "<br>");
+
+document.write(garage.tool + "<br>");
+
+document.write(garage.carsInGarage.carModels[0] + "<br>");
+
+document.write(garage.snowMachines[0] + "<br>");
+
+
+</script>
+
+</body>
+</html>
