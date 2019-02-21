@@ -18,25 +18,24 @@
     <!-- Script -->
     <script type="text/javascript">
 
-      // We define a person, and include a method that logs his name along with a greeting.
-      var person = {
-        name: "Jeff",
-        sayHi: function() {
-          console.log("Hi, I'm " + this.name);
-          console.log(this);
-        }
-      };
+    var person = {
+      name: "Jeff",
+      sayHi: function() {
+        introduction.action();
+      }
+    };
 
-      // When we run it normally, it works like we intended.
-      person.sayHi();
+    var introduction = {
+      name: "Soccer",
+      action: function() {
+       document.write("Hi, I'm " + person.name + "<br/>");
+       document.write("I like to play " + this.name + "<br/>");
+      }
+    };
 
-      // Hi, I'm Jeff
-      // But if we include it in a timeout
-      setTimeout(person.sayHi, 50);
 
-      // We get the following:
-      // Hi, I'm
-      // Window Object
+    person.sayHi();
+  
 
     </script>
 
