@@ -1,0 +1,15 @@
+Important Class Notes:
+
+<p>What is process.argv</p>
+
+<p>“The process.argv property returns an array containing the command line arguments passed when the Node.js process was launched.”
+</p>
+<p>
+You can use this to find out what arguments are being passed into your program, if a certain argument is supplied you can have the node.js program do something that it wouldn't do if there weren’t any supplied arguments.
+</p>
+<p>
+With process.argv the first element will be node.js path. The second element is the path to the js file being executed. Every element after is a user supplied argument.
+</p>
+<p>
+process.argv stores everything as an array, so to view a specific argument, use indexing as such: process.argv[2] - would return the first ‘user supplied’ argument. process.argv[0] - returns the PATH to node.js exec.
+</p>
