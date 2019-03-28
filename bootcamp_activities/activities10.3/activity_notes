@@ -1,0 +1,137 @@
+
+--
+
+01 CommandSort Refresher (0:15)
+
+Instructions:
+
+Starting from 01_commandSortUnsolved.js, create a Node-based command-line application that takes in a series of numbers from the user and returns the numbers sorted in ascending order. 
+
+Note: Feel free to use Stack Overflow or Google to find the code for sorting integers numerically.
+
+---
+
+
+Geocode NPM (0:20)  
+
+Instructions:
+
+Create a Node application which makes use of the "geocoder" NPM package to obtain detailed geocoding information about a location.
+
+Then console.log the geocoding information to display in your terminal.
+
+You can choose to make one of two assumptions when completing this application.
+
+Easier Option: The user will always provide a location in the following format: "City, State" (example: "Atlanta, GA", "Houston, TX").
+
+Harder Option: The user can provide a location in any format. In fact, they can even provide a landmark instead of an address. ("151 Sip Ave, Jersey City NJ", "The Eiffel Tower", etc.)
+
+Remember to log the output using JSON.stringify in a pretty-print format.
+
+---
+
+Study weatherDest.js (0:07)
+
+Take a moment to run the weatherDest.js application. (Try to figure out what it takes to run on your own!)
+
+Then, with a partner, spend a few moments answering the following questions:
+
+What does the code do?
+
+How does it work at a general level?
+
+How does it work at a line level?
+
+--
+
+Everyone Do: NPM Install weatherdest (0:07)
+
+Now slack out the following:
+
+Instructions:
+
+Navigate to the folder where your weatherDest.js file is.
+
+Delete the node_modules folder. Then do the following:
+
+Create a package.json file (i.e. run npm init)
+
+Add your dependencies to the package.json (i.e. run npm install geocoder and npm install weather-js)
+
+Confirm that you now have a node_modules folder with the geocoder and weather-js packages as a result
+
+Finally, re-run your weatherDest.js to confirm that it still works as expected
+
+Now delete your node_modules folder again but keep your packages.json file. This time...
+
+Simply run npm install
+
+Confirm that you once again have a node_modules folder with the geocoder and weather-js packages
+
+Finally, re-run weatherDest.js to confirm that it still works as expected
+
+
+---
+
+NPM page for Inquirer.js
+
+https://www.npmjs.com/package/inquirer.
+
+---
+
+Partners Do: Review Inquirer Intro	(0:05)
+Slack out the following instructions:
+
+Instructions:
+
+Spend a few moments studying the code with the person next to you. Be sure each of you understand:
+
+How to install and incorporate the inquirer package.
+
+How to create the variety of prompts offered by the package.
+
+The significance of the .then function and the variable created (in this case user).
+
+
+---
+
+18.	Students Do: Inquirer User Activity	(0:20)
+Then slack out the next activity.
+
+Files:
+
+userPrompt.js (26-Inquirer_Users > UNSOLVED)
+Instructions:
+
+Create a basic command line Node application using the inquirer package.
+
+Your application should ask the user any five questions of your choosing.
+
+The question set should include at least one:
+
+Basic input,
+Password
+List,
+Checkbox,
+Confirm
+Then if a user's password matches a pre-defined password, re-display the data back to the user with some text.
+
+HINT: See the inquirer GitHub documentation "examples" page if you need help.
+
+Remember to get creative with your code!
+
+---
+
+Zombie Challenge (BONUS)	(1:00)
+Use the following activity to fill up any remaining time you have in class (or to keep advanced students occupied if they finish the Inquirer activity early). This is a fairly challenging and time consuming activity, so let students know they may not finish in class, but a solution will be provided to them nonetheless afterwards.
+
+File:
+
+zombieGame.js (29-ZombieChallenge > UNSOLVED)
+
+ZombieGame.mp4
+
+Instructions:
+
+Follow the instructions in the file sent to you to create a turn-based Zombie RPG game. You can also reference the video sent to you to have a clearer idea of what the final product should look like.
+Note for Instructors / TAs: This is also a good time to help weaker students catch up in class if they are missing more critical concepts.
