@@ -1,0 +1,44 @@
+Show: Westworld
+
+Genre(s): Drama, Science-Fiction, Western
+
+Rating: 8.5
+
+Network: HBO
+
+Summary: <p><b>Westworld</b> is a dark odyssey about the dawn of artificial consciousness and the evolution of sin. Set at the intersection of the near future and the reimagined past, it explores a world in which every human appetite, no matter how noble or depraved, can be indulged.</p>
+------------------------------------------------------------
+
+Name: Bill Murray
+
+Birthday: 1950-09-21
+
+Gender: Male
+
+Country: United States
+
+URL: http://www.tvmaze.com/people/43681/bill-murray
+------------------------------------------------------------
+
+Show: The Simpsons
+
+Genre(s): Comedy, Family
+
+Rating: 8.4
+
+Network: FOX
+
+Summary: <p><b>The Simpsons</b> is the longest running scripted show in US television history. It captures the adventures of Homer, Marge, Maggie, Bart and Lisa who are living in a fictional town called Springfield.</p>
+------------------------------------------------------------
+
+Show: Futurama
+
+Genre(s): Comedy, Adventure, Science-Fiction
+
+Rating: 9.1
+
+Network: Comedy Central
+
+Summary: <p><b>Futurama</b> follows pizza guy Philip J. Fry, who reawakens in 31st century New New York after a cryonics lab accident. Now part of the Planet Express delivery crew, Fry travels to the farthest reaches of the universe with his robot buddy Bender and cyclopsian love interest Leela, discovering freaky mutants, intergalactic conspiracies and other strange stuff.</p>
+------------------------------------------------------------
+

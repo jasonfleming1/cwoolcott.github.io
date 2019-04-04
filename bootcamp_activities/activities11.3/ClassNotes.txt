@@ -1,0 +1,97 @@
+
+*** Notes ***
+
+Callback Functions Are Closures
+
+When we pass a callback function as an argument to another function, the callback is executed at some point inside the containing function’s body just as if the callback were defined in the containing function. This means the callback is a closure. 
+
+Closures have access to the containing function’s scope, so the callback function can access the containing functions’ variables, and even the variables from the global scope.
+
+*** Closure ***
+
+An inner function that has access to the outer (enclosing) function's variables
+
+function showName (firstName, lastName) {
+	var nameIntro = "Your name is ";
+	
+    	// this inner function has access to the outer function's variables, including the parameter​
+	function makeFullName () {  
+		return nameIntro + firstName + " " + lastName;
+	}
+	
+	return makeFullName ();
+}
+
+showName ("Bart", "Simpson"); // Your name is Bart Simpson
+
+*** callbacks ***
+
+var friends = ["Mike", "Stacy", "Andy", "Rick"];
+
+
+friends.forEach(function (eachName, index){
+	console.log(index + 1 + ". " + eachName); // 1. Mike, 2. Stacy, 3. Andy, 4. Rick
+});
+
+*** callbacks2 ***
+
+function done(){
+	console.log("Done");
+}
+
+//the parent function 
+function increment(num, callBack){
+	for(var i = 0; i <= num; i++){
+  	console.log(i);
+  }
+  return callBack();
+}
+
+//the callback function is passed to the increment function 
+increment(10, done);
+
+*** Promise ***
+
+Promise are pending.. 
+Promise are resolved..
+Promise are rejected..
+
+var p = new Promise(function(resolve, reject) {
+	
+	// Do an async task async task and then...
+
+	if(/* good condition */) {
+		resolve('Success!');
+	}
+	else {
+		reject('Failure!');
+	}
+});
+
+p.then(function() { 
+	/* do something with the result */
+}).catch(function() {
+	/* error :( */
+})
+
+
+*** Promise 2 *** 
+
+function get(url){
+	return new Promise(function(succeed, fail){
+		var req = new XMLHttpRequest();
+		req.open("GET", url, true);
+		req.addEventListener("load", function(){
+			if(req.status < 400){
+				succeed(req.responseText);
+			}else{
+				fail(new Error("Request failed: " + req.statusText));
+			}
+		});
+		req.addEventListener("error", function(){
+			fail(new Error("Network error"));
+		});
+		req.send(null);
+	});
+}
+
