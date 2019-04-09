@@ -1,0 +1,107 @@
+---
+
+Students Do: Creating a Localhost Connection (10 - 30 mins)
+Instructions
+
+Now it is your turn to set up a localhost connection! This may seem as if it will be an easy task, but there are some common errors and hurdles that might stand in your way as you work to create your first ever MySQL connection.
+
+Start out by opening up MySQL Workbench and hitting the (+) button next to the text which reads "MySQL Connections". Sequel Pro will also have a (+) on the bottom left for new connections.
+
+Enter the following credentials into the on-screen prompt...
+
+Connection Name: Local Instance MySQL
+
+Connection Method: Standard (TCP/IP)
+
+Hostname: localhost
+
+Port: 3306
+
+Username: <Your MySQL Username> (Defaults to "root")
+
+Password: <Your MySQL Password> (Defaults to empty)
+
+Keep the Default Schema field empty
+
+Hit "Test Connection" and, if the connection is successful, hit okay and double-click on the newly created field under the "MySQL Connections" text on the home page
+
+If the connection fails, raise your hand and one of us will come around to help you out. Until we come by, however, take this time to go online and see if there is anything online which might tell you what went wrong. Do not worry if you cannot find anything though, we will make sure to figure this out.
+If your connection was successful and you have nothing else to do, feel free to help those around you in creating their connections.
+
+BONUS: Look into how you can create and use databases using SQL commands
+
+BONUS: Look into the reasons why MySQL uses port 3306 as its default
+
+---
+
+Students Do: Setting Up FavoriteDB (10 mins)
+
+File:
+
+favorite_db_unsolved.sql in 02-FavoriteDB-NoData/Unsolved
+
+Instructions:
+
+For the table favorite_foods...
+
+Create the column "food" which can take in a 50 character string and cannot be NULL
+Create the column "score" which can take in an integer
+For the table favorite_songs...
+
+Create the column "song" which can take in a 100 character string and cannot be NULL
+Create the column "artist" which can take in a 50 character string
+Create the column "score" which can take in an integer
+For the table favorite_movies...
+
+Create the column "film" which can take in a string and cannot be NULL
+Create the column "five_times" which can take in a boolean
+create the column "score" which can take in an integer
+BONUS: Go online and look into how one might go about adding data into a table.
+
+---
+
+Students Do: Adding Data to FavoriteDB (10 Mins)
+Slack out the following instructions
+
+Instructions
+
+It is time to add some data into FavoriteDB! The data that you add should be unique to you and you should try to test your skills in not only adding new data, but also attempt to update old data as well!
+
+Try to add at least three rows of data to each table.
+
+BONUS: Look into how you you might go about creating a column that can hold a default value within it and how default values work when creating new rows.
+
+BONUS: Look into how you might go about creating a column with a default value that automatically go up with each new row
+
+BONUS: Look into the concept of making a column the "primary key"
+
+ULTRA BONUS: Try to create a column called "id" in one of your tables that can contain an integer, is the primary key for the table, cannot be NULL, and automatically increments with each new row added.
+
+---
+
+Students Do: Making and Using an ID Column (10 mins)
+
+Make a new database called "programming_db" and switch into it for this activity
+
+Create a table called "programming_languages" which includes a primary key named "id" which will automatically increment which each new row created, a string column called "languages," and a numeric column called "rating."
+
+Insert some data into the table and then modify the data using the id column.
+
+BONUS: Study up on how to add columns to a table and then create a boolean column called "mastered" which has a default value of true.
+
+BONUS: Start looking into the concept of joins in SQL
+
+---
+BASIC JOINS
+
+INNER JOIN is equivalent to "show me all students with lockers".
+Any students without lockers, or any lockers without students are missing.
+Returns 70 rows
+
+LEFT OUTER JOIN would be "show me all students, with their corresponding locker if they have one". 
+This might be a general student list, or could be used to identify students with no locker. 
+Returns 100 rows
+
+RIGHT OUTER JOIN would be "show me all lockers, and the students assigned to them if there are any". 
+This could be used to identify lockers that have no students assigned, or lockers that have too many students. 
+Returns 80 rows (list of 70 students in the 40 lockers, plus the 10 lockers with no student)
