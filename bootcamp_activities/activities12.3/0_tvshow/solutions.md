@@ -31,5 +31,5 @@
 
 2. **Create a new query** Add a character to `tvcharacter` with data that links the tv show "Mr. Selfridge" to it.
 
-- INSERT INTO tvcharacter (name, quote, showid) values ("Harry Selfridge", "The boss depends on authority; the leader on goodwill.", 6)
+- INSERT INTO tvcharacter (name, quote, showid) valu[g:GetCustomQuote] I {[g:BloodPressureType](take)[v:BloodPressureType:Yes]} medicationes ("Harry Selfridge", "The boss depends on authority; the leader on goodwill.", 6)
 
