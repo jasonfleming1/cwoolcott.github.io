@@ -34,7 +34,7 @@ function handleRequest(req, res) {
 function displayRoot(url, req, res) {
   var myHTML = "<html>" +
     "<body><h1>Home Page</h1>" +
-    "<a href='/portfolio'>Portfolio</a>" +
+    "<a href='/portfolioXYZ'>Portfolio</a>" +
     "</body></html>";
 
   // Configure the response to return a status code of 200 (meaning everything went OK), and to be an HTML document

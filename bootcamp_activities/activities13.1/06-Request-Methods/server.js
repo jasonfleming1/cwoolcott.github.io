@@ -20,6 +20,16 @@ function handleRequest(req, res) {
   // When the request has ended...
   req.on("end", function() {
 
+    switch (req.method){
+
+      case "GET":
+        console.log("Read an Item")
+        break;
+      case "DELETE":
+        console.log("Deleted an Item")
+        break;
+    }
+
     // Log (server-side) the request method, as well as the data received!
     console.log("You did a", req.method, "with the data:\n", requestData);
     res.end();
