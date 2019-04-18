@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Voice Idol</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="styles/voiceidol.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center">
+        <span class="fa fa-microphone"></span> Voice Idol</h1>
+      <hr>
+      <h2 class="text-center">Add a singer</h2>
+      <br>
+      <div class="text-center">
+        <a href="/singers">
+          <button class="btn btn-lg btn-primary">
+            <span class="fa fa-list-alt"></span> View Singers</button>
+        </a>
+        <a href="/">
+          <button class="btn btn-lg btn-default">
+            <span class="fa fa-home"></span>
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Reservation Page -->
+        <div class="card">
+          <div class="card-header">
+            Add Singer
+          </div>
+          <div class="card-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="singer-name">Name</label>
+                <input type="text" class="form-control" id="singer-name">
+              </div>
+              <div class="form-group">
+                <label for="singer-phone">Phone Number</label>
+                <input type="text" class="form-control" id="singer-phone">
+              </div>
+              <div class="form-group">
+                <label for="singer-style">Style</label>
+                <input type="text" class="form-control" id="singer-style">
+              </div>
+              <div class="form-group">
+                <label for="singer-points">Points (1-100)</label>
+                <input type="text" class="form-control" id="singer-points">
+              </div>
+              <button type="submit" class="btn btn-primary submit">Add</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="/api/singers">API Singers Link</a> 
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+
+  $(".submit").on("click", function(event) {
+    event.preventDefault();
+
+    var newSinger = {
+      singerName: $("#singer-name").val().trim(),
+      singerPhone: $("#singer-phone").val().trim(),
+      singerStyle: $("#singer-style").val().trim(),
+      singerPoints: $("#singer-points").val().trim()
+    };
+
+    console.log(newSinger);
+
+    $.post("/api/singers", newSinger,
+      function(data) {
+        console.log(data);
+        if (data) {
+          alert("New Singer '" + data.singerName +"' Added");
+          $("#singer-name").val("");
+          $("#singer-phone").val("");
+          $("#singer-style").val("");
+          $("#singer-points").val("");
+        }
+        else{
+          alert("New Singer Not Added");
+        }
+
+      });
+
+  });
+
+</script>
