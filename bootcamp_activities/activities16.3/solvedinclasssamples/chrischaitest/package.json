@@ -1,0 +1,19 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "Examples introducing Mocha and Chai.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "npm": "^6.4.0"
+  }
+}

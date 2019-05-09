@@ -1,2 +1,44 @@
 https://stackoverflow.com/questions/1687262/link-to-the-issue-number-on-github-within-a-commit-message
 
+Benjamin
+
+
+
+
+
+
+Message List
+
+Ben A 
+Benjamin
+This is the very beginning of your direct message history with @Ben A
+
+Chris W - Instructor [8:36 PM]
+Two Foreign Key Example 
+
+List.belongsTo(Task, {
+  as: 'dailyTask',
+  foreignKey: 'dailyTask'
+});
+​
+List.belongsTo(Task, {
+  as: 'weeklyTask',
+  foreignKey: 'weeklyTask'
+});
+Collapse
+
+
+Ben A [8:37 PM]
+I'm still struggling with the multiple associations
+
+realized after you left that User will need to be defined as belongsToMany tasks and hasMany tickets
+
+
+Chris W - Instructor [8:45 PM]
+Nested Loading 
+https://sequelize.readthedocs.io/en/latest/docs/models-usage/index.html#nested-eager-loading
+
+Message Input
+
+
+Message Ben A
