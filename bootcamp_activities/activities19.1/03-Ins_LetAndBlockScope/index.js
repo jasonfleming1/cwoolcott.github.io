@@ -1,38 +1,40 @@
 // 1. When using var, our counter exists after a for-loop is done
 
-for (var i = 0; i < 5; i++) {
-  console.log(i);
-}
-
-console.log(i); // Prints 5
+// for (var i = 0; i < 5; i++) {
+//   console.log(i);
+// }
+// console.log("-------")
+// console.log(i); // Prints 5
 
 
 // When using let, our counter is not defined outside of the for-loop block
 
-let x = 42;
+// let x = 42;
 
-for (let j = 0; j < 5; j++) {
-  console.log(j);
-  console.log(x);
-}
+// for (let j = 0; j < 5; j++) {
+//   console.log(j);
+//   console.log(x);
+// }
 
-console.log(j); // ReferenceError: j is not defined
+// // console.log(j); // ReferenceError: j is not defined
 
-let j = 42;
-console.log(j); // prints 42
+
+
+// let j = 42;
+// console.log(j); // prints 42
 
 // ==========================================================================
 
 // 2. When using while loops, any values we create inside exist outside of the while-loop block
 
-// var count = 0;
+var count = 0;
 
-// while (count < 5) {
-//   var tripled = count * 3;
-//   count++;
-// }
+while (count < 5) {
+  var tripled = count * 3;
+  count++;
+}
 
-// console.log(tripled); // Prints 12
+console.log(tripled); // Prints 12
 
 // ==========================================================================
 
