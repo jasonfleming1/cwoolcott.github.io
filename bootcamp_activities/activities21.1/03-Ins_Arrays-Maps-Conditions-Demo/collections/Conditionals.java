@@ -67,7 +67,7 @@ public class Conditionals {
       */
      System.out.println(String.format("Your sentence was %s.", sentence));
      System.out.println(String.format("Your word was %s.", word));
-     System.out.println(String.format("Your integer was %s.", _int));
+     System.out.println(String.format("Your integer was %d.", _int));
      System.out.println(String.format("Your double was %s.", dub));
    }
 }

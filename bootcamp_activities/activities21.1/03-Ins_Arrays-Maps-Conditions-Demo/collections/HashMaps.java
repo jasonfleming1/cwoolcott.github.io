@@ -1,6 +1,6 @@
 package collections;
 
-import java.util.HashMap;;
+import java.util.HashMap;
 
 public class HashMaps {
   
@@ -42,6 +42,9 @@ public class HashMaps {
 
     // There are a couple of ways to iterate a map, but forEach is the easiest.
     payroll.put("Cassius", 95000);
+
+
+
     payroll.forEach((last, salary) -> {
       System.out.println(String.format("%s's salary is %d.", last, salary));
     });

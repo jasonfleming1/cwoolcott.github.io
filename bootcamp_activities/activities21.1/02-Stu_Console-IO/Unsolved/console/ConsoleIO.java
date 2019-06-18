@@ -1,6 +1,8 @@
 package console;
 
 import java.util.Scanner;
+import java.util.HashMap;
+import java.util.ArrayList;
 
 /* ****************************************************************************
  *
@@ -27,6 +29,47 @@ import java.util.Scanner;
 public class ConsoleIO {
 
   public static void main(String[] args) {
+
+    ArrayList<HashMap<String, String>> students = new ArrayList<>();
+
+
+    while(true){
+
+
+
+      HashMap<String, String> student = new HashMap<>();
+
+      String confirmation = "";
+
+      System.out.print("First Name is?");
+      if(input.hasNext()){
+        student.put("firstname",input.next());
+      }
+
+      student.forEach((attrib, value) -> {
+        System.out.print(String.format("%s is %s", attrib, value));
+      });
+
+      System.out.println("Enter More?");
+
+      if(input.hasNext()){
+        confirmation = input.next();
+      }
+
+      students.add(student);
+
+      if (confirmation.equals("Yes") || confirmation.equals("Y")){
+        continue;
+      }
+      else{
+
+
+        break;
+      }
+
+
+    }
+
 
     // You need to instantiate something to read user input. Do that here.
 
