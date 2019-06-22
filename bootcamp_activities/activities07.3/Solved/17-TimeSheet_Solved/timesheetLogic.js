@@ -9,12 +9,12 @@
 
 // 1. Initialize Firebase
 var config = {
-    apiKey: "AIzaSyDl69Lq5lQ9KvB8hfFh_3s9TvZFte3ANzg",
-    authDomain: "timesheet-chris.firebaseapp.com",
-    databaseURL: "https://timesheet-chris.firebaseio.com",
-    projectId: "timesheet-chris",
-    storageBucket: "timesheet-chris.appspot.com",
-    messagingSenderId: "611104584300"
+      apiKey: "AIzaSyBfyrrmUqygTJxX-TNfAAbGOpZRcbr19uY",
+      authDomain: "recent-user-with-set-chris.firebaseapp.com",
+      databaseURL: "https://recent-user-with-set-chris.firebaseio.com",
+      projectId: "recent-user-with-set-chris",
+      storageBucket: "recent-user-with-set-chris.appspot.com",
+      messagingSenderId: "771666105922"
 };
 
 firebase.initializeApp(config);

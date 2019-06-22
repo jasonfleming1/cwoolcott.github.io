@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Employee Tracker</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <!-- Moment.js Reference -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+  <style>
+    #calculator-table th,
+    td {
+      display: inline-block;
+      width: 16.575%;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Employee Tracker -->
+  <div class="container">
+
+    <!-- Jumbotron -->
+    <div class="jumbotron" style="background-color: black; color: white">
+      <h1 class="text-center">Calculator</h1>
+      <h3 class="text-center">Calculator Title</h3>
+    </div>
+
+    <div class="row">
+       <div class="col-md-12">
+        Total: <span id="tot"></span>
+       </div>
+      <div class="col-md-12">
+
+        <!-- Current Employees-->
+        <div class="card mb-4">
+          <div class="card-body">
+            
+            <table class="table table-sm table-hover" id='calculator-table'>
+              <thead>
+                <tr>
+                  <th scope="col">Number</th>
+                  <th scope="col">Operator</th>
+                  <th scope="col">Number</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="card mb-4 p-4">
+          <div class="card-body">
+            Calculator
+            <!-- Entry Form -->
+            <form>
+              <div class="form-group row">
+                <label for="firstDigit">Number Options</label>
+                <input class="form-control" id="firstDigit" placeholder="1" type="number">
+              </div>
+              <div class="form-group row">
+                <label for="operator">Operator Button Options</label>
+                <input class="form-control" id="operator" placeholder="+" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="secondDigit">Number Options</label>
+                <input class="form-control" id="secondDigit" placeholder="2" type="number">
+              </div>
+              
+              <button class="btn btn-primary float-right" id="calc">Submit</button>
+  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="calc.js"></script>
+
+</body>
+
+</html>

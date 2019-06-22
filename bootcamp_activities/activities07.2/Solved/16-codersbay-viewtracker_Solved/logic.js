@@ -4,11 +4,12 @@
 // Make sure to match the configuration to the script version number in the HTML
 // (Ex. 3.0 != 3.7.0)        
 var config = {
-  apiKey: "AIzaSyDxQqkGa3AKrcGmGVFalJe40g4hdzADf6w",
-  authDomain: "coder-bay-views.firebaseapp.com",
-  databaseURL: "https://coder-bay-views.firebaseio.com",
-  storageBucket: "coder-bay-views.appspot.com",
-  messagingSenderId: "17945436261"
+      apiKey: "AIzaSyBfyrrmUqygTJxX-TNfAAbGOpZRcbr19uY",
+      authDomain: "recent-user-with-set-chris.firebaseapp.com",
+      databaseURL: "https://recent-user-with-set-chris.firebaseio.com",
+      projectId: "recent-user-with-set-chris",
+      storageBucket: "recent-user-with-set-chris.appspot.com",
+      messagingSenderId: "771666105922"
 };
 
 firebase.initializeApp(config);
